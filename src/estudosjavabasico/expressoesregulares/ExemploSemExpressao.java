@@ -1,4 +1,4 @@
-package expressoesregulares;
+package estudosjavabasico.expressoesregulares;
 
 public class ExemploSemExpressao {
 

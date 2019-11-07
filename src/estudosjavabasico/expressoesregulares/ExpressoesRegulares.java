@@ -1,4 +1,4 @@
-package expressoesregulares;
+package estudosjavabasico.expressoesregulares;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,8 +9,8 @@ public class ExpressoesRegulares {
     /* ====== meta caracteres ========*/
     // \d - todos os digitos
     // \D - tudo que nao for digito
-    // \s - espaço em branco \t \n \f \r
-    // \S - caractere que nao é branco
+    // \s - espaï¿½o em branco \t \n \f \r
+    // \S - caractere que nao ï¿½ branco
     // \w - procurar por caracteres de palavras a-z-A-Z, digitos e _
     // \W - tudo que nao for uma palavra
     // [] -
@@ -24,7 +24,7 @@ public class ExpressoesRegulares {
     // $  - algo que esteja no fim da linha
     // .  - coringa pode subtituido por qualquer coisa. ex: 1.3 = 123,133,1A3,1#3, 1 3;
     // o(v|c)o = ovo, oco
-    // maca(rr|c)ão = macarrão ou macacão
+    // maca(rr|c)ï¿½o = macarrï¿½o ou macacï¿½o
     // ^  - [^abc] busca tudo que nao for abc
     /*String busca = "0[xX]([0-9a-fA-F])+(\\s|$)";
     String texto = "12 0x 0x 0x01FFABC 0x10G 0x1";
