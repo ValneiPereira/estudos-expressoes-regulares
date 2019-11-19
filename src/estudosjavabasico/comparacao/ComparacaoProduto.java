@@ -1,10 +1,10 @@
-package estudosjavabasico.aplicacao;
+package estudosjavabasico.comparacao;
 
 import java.util.Comparator;
 
 import estudosjavabasico.entidade.Produto;
 
-public class MinhaComparacao implements Comparator<Produto> {
+public class ComparacaoProduto implements Comparator<Produto> {
 
   @Override
   public int compare(Produto p1, Produto p2) {

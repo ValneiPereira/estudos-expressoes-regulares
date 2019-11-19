@@ -10,16 +10,32 @@ public class Aplicacao {
     
     List<Produto> produtos = new ArrayList<>();
     
-    produtos.add(new Produto("Tv", 900.00));
-    produtos.add(new Produto("Notebook", 1200.00));
-    produtos.add(new Produto("Celular", 1700.00));
+    produtos.add(new Produto("C", 900.00));
+    produtos.add(new Produto("B", 1200.00));
+    produtos.add(new Produto("A", 1700.00));
     
-    produtos.sort(new MinhaComparacao());
+    /*Comparator<Produto> compara = new Comparator<Produto>() {
     
+      @Override
+      public int compare(Produto p1, Produto p2) {
+        
+        return p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());
+      }
+      
+    };
+    */
+    /*Comparator<Produto> compara = (p1,p2) -> {
+      return p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());// tem apenas uma linha pode melhorar
+    };*/
+    
+    //Comparator<Produto> compara = (p1,p2) -> p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());
+    
+    
+    
+    produtos.sort((p1,p2) -> p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase()));
     for (Produto produto : produtos) {
       System.out.println(produto);
     }
-    
     
   }
 
