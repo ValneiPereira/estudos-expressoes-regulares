@@ -10,9 +10,9 @@ public class Aplicacao {
     
     List<Produto> produtos = new ArrayList<>();
     
-    produtos.add(new Produto("C", 900.00));
-    produtos.add(new Produto("B", 1200.00));
-    produtos.add(new Produto("A", 1700.00));
+    produtos.add(new Produto("c", 900.00));
+    produtos.add(new Produto("b", 1200.00));
+    produtos.add(new Produto("a", 1700.00));
     
     /*Comparator<Produto> compara = new Comparator<Produto>() {
     
@@ -34,7 +34,7 @@ public class Aplicacao {
     
     produtos.sort((p1,p2) -> p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase()));
     for (Produto produto : produtos) {
-      System.out.println(produto);
+      System.out.println(produto.toString().toUpperCase());
     }
     
   }

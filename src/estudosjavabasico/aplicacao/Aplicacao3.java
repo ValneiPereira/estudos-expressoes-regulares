@@ -10,7 +10,7 @@ public class Aplicacao3 {
   
   public static int compare(Cliente c1, Cliente c2) {
 
-    return c1.getSalario().compareTo(c2.getSalario());
+    return c1.getSalario().compareTo(c2.getSalario()) ;
     
   }
   
