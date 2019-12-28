@@ -23,6 +23,7 @@ public class Aplicacao3 {
     clientes.add(new Cliente("amanda", new BigDecimal(800.00)));
     
     
+    
     /*passando uma  funcao como argumento de outra funcao, 
     a funcao objeto de 1 ordem, pode ser passado como argumento e retornado por uma funcao.*/ 
     clientes.sort(Aplicacao3::compare );

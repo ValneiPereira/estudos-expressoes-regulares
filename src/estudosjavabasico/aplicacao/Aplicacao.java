@@ -8,6 +8,7 @@ import estudosjavabasico.entidade.Produto;
 public class Aplicacao {
   public static void main(String[] args) {
     
+    
     List<Produto> produtos = new ArrayList<>();
     
     produtos.add(new Produto("c", 900.00));
