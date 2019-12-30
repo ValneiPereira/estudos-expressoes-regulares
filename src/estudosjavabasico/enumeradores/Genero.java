@@ -1,4 +1,4 @@
-package estudosjavabasico.enumerador;
+package estudosjavabasico.enumeradores;
 
 public enum Genero {
   FEMININO('F'), MASCULINO('M');

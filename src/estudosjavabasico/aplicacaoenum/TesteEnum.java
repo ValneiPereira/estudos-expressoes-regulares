@@ -1,6 +1,6 @@
 package estudosjavabasico.aplicacaoenum;
 
-import estudosjavabasico.enumerador.DiaSemana;
+import estudosjavabasico.enumeradores.DiaSemana;
 
 public class TesteEnum {
 

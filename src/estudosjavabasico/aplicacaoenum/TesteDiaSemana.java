@@ -1,7 +1,7 @@
 package estudosjavabasico.aplicacaoenum;
 
-import estudosjavabasico.enumerador.DiaSemana;
-import estudosjavabasico.enumerador.Genero;
+import estudosjavabasico.enumeradores.DiaSemana;
+import estudosjavabasico.enumeradores.Genero;
 
 public class TesteDiaSemana {
 
