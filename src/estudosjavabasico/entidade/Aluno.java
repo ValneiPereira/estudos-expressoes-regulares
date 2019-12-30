@@ -2,15 +2,15 @@ package estudosjavabasico.entidade;
 
 public class Aluno {
   private String nome;
-  private int idade;
+  private int    idade;
   private String dataNascimento;
   private String rg;
   private String cpf;
-  
-   public Aluno() {
+
+  public Aluno() {
 
   }
-  
+
   public Aluno(String nome, int idade, String dataNascimento, String rg, String cpf) {
     super();
     this.nome           = nome;
@@ -19,8 +19,6 @@ public class Aluno {
     this.rg             = rg;
     this.cpf            = cpf;
   }
-  
-  
 
   public String getNome() {
     return nome;
@@ -66,7 +64,5 @@ public class Aluno {
   public String toString() {
     return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", rg=" + rg + ", cpf=" + cpf + "]";
   }
-  
-   
-  
+
 }
