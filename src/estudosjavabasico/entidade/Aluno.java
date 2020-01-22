@@ -1,5 +1,8 @@
 package estudosjavabasico.entidade;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aluno {
   private String nome;
   private int    idade;
@@ -7,17 +10,10 @@ public class Aluno {
   private String rg;
   private String cpf;
 
+  private List<Curso> cursos = new ArrayList<Curso>();
+
   public Aluno() {
 
-  }
-
-  public Aluno(String nome, int idade, String dataNascimento, String rg, String cpf) {
-    super();
-    this.nome           = nome;
-    this.idade          = idade;
-    this.dataNascimento = dataNascimento;
-    this.rg             = rg;
-    this.cpf            = cpf;
   }
 
   public String getNome() {
@@ -60,9 +56,65 @@ public class Aluno {
     this.cpf = cpf;
   }
 
+  public List<Curso> getCursos() {
+    return cursos;
+  }
+
+  public void setCursos(List<Curso> cursos) {
+    this.cursos = cursos;
+  }
+
+  public double getMediaNota() {
+    double somaNotas = 0.0;
+    for (Curso curso : cursos) {
+      somaNotas += curso.getNota();
+    }
+    return somaNotas / cursos.size();
+
+  }
+
+  public String getAlunoAprovado() {
+    double media = getMediaNota();
+
+    if (media >= 50) {
+      if (media >= 70) {
+        return "Aprovado";
+      } else {
+        return "recuperacao";
+      }
+    } else {
+      return "reprovado";
+    }
+  } 
+
+  @Override
+  public int hashCode() {
+    final int prime  = 31;
+    int       result = 1;
+    result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
+    return result;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    Aluno other = (Aluno) obj;
+    if (cpf == null) {
+      if (other.cpf != null)
+        return false;
+    } else if (!cpf.equals(other.cpf))
+      return false;
+    return true;
+  }
+
   @Override
   public String toString() {
-    return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", rg=" + rg + ", cpf=" + cpf + "]";
+    return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", rg=" + rg + ", cpf=" + cpf + ", cursos=" + cursos + "]";
   }
 
 }
