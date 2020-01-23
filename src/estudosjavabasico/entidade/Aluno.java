@@ -3,6 +3,8 @@ package estudosjavabasico.entidade;
 import java.util.ArrayList;
 import java.util.List;
 
+import estudosjavabasico.constantes.StatusAluno;
+
 public class Aluno {
   private String nome;
   private int    idade;
@@ -78,12 +80,12 @@ public class Aluno {
 
     if (media >= 50) {
       if (media >= 70) {
-        return "Aprovado";
+        return StatusAluno.APROVADO;
       } else {
-        return "recuperacao";
+        return StatusAluno.RECUPERACAO;
       }
     } else {
-      return "reprovado";
+      return StatusAluno.REPROVADO;
     }
   } 
 
